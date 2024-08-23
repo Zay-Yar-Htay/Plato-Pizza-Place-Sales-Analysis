@@ -50,8 +50,14 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 **Report Publishing:** Published the final report to Power BI Service to share the results with stakeholders.
 
 
+## Business Questions
+1. How many customers do we have each day? Are there any peak hours?
 
+2. How many pizzas are typically in an order? Do we have any bestsellers?
 
+3. How much money did we make this year? Can we identify any seasonality in the sales?
+
+4. Are there any pizzas we should take off the menu, or any promotions we could leverage?
 
 
 

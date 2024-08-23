@@ -65,10 +65,10 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 
 **INSIGHTS**
 
-**Daily Customer Variation:** The data reveals a fluctuation in daily customer numbers, ranging from a low of 27 customers to a high of 115 customers. Key observations include:
- * **Average Daily Customers:** Most days see between 50 to 70 customers.
- * **High Traffic Days:** Notable dates include November 27 (115 customers), November 26 (113 customers), and October 15 (107 customers). These dates likely correspond with special events, holidays, or successful promotions. Additionally, July 4 (105 customers), and July 3 (93 customers) also stand out as additional high-traffic days, indicating potential holiday-related spikes.
- * **Monthly Performance:** Looking back at 2015, July emerged as the top-performing month in terms of customer count, followed closely by May, March, and November. Meanwhile, September and October recorded the lowest customer counts.
+* **Daily Customer Variation:** The data reveals a fluctuation in daily customer numbers, ranging from a low of 27 customers to a high of 115 customers. Key observations include:
+   * **Average Daily Customers:** Most days see between 50 to 70 customers.
+   * **High Traffic Days:** Notable dates include November 27 (115 customers), November 26 (113 customers), and October 15 (107 customers). These dates likely correspond with special events, holidays, or successful promotions. Additionally, July 4 (105 customers), and July 3 (93 customers) also stand out as additional high-traffic days, indicating potential holiday-related spikes.
+   * **Monthly Performance:** Looking back at 2015, July emerged as the top-performing month in terms of customer count, followed closely by May, March, and November. Meanwhile, September and October recorded the lowest customer counts.
 
 **RECOMMENDATIONS**
 * **Leverage High-Traffic Days:** Focus on scheduling additional staff, preparing inventory, and launching targeted promotions on identified high-traffic days like November 27, November 26, and October 15, as well as July 3-4. Understanding the underlying factors (events, promotions, holidays) driving these spikes can help replicate success on other days.

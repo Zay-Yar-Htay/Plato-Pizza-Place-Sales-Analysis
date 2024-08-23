@@ -1,6 +1,7 @@
 --To Create Database
 DROP DATABASE IF EXISTS [plato_pizza_sales];
 CREATE DATABASE [plato_pizza_sales];
+---------------------------------------------------------------------------------------------------------
 
 -- To Create Orders Table
 CREATE TABLE [orders]
@@ -11,7 +12,7 @@ CREATE TABLE [orders]
 	PRIMARY KEY ([order_id])
 	)
 ;
--- To import CSV file into City Table
+-- To import CSV file into Orders Table
 BULK INSERT [orders]
 FROM 'D:\MSSQL Datasets\orders.csv'
 WITH 
@@ -33,7 +34,8 @@ CREATE TABLE [pizza_types]
 	PRIMARY KEY ([pizza_type_id])
 	)
 ;
--- To import CSV file into City Table
+
+-- To import CSV file into Pizza Types Table
 BULK INSERT [pizza_types]
 FROM 'D:\MSSQL Datasets\pizza_types.csv'
 WITH 
@@ -56,7 +58,8 @@ CREATE TABLE [pizzas]
 	FOREIGN KEY ([pizza_type_id]) REFERENCES [pizza_types] ([pizza_type_id])
 	)
 ;
--- To import CSV file into City Table
+
+-- To import CSV file into Pizzas Table
 BULK INSERT [pizzas]
 FROM 'D:\MSSQL Datasets\pizzas.csv'
 WITH 
@@ -80,7 +83,8 @@ CREATE TABLE [order_details]
 	FOREIGN KEY ([pizza_id]) REFERENCES [pizzas] ([pizza_id])
 	)
 ;
--- To import CSV file into City Table
+
+-- To import CSV file into Order Details Table
 BULK INSERT [order_details]
 FROM 'D:\MSSQL Datasets\order_details.csv'
 WITH 
@@ -93,8 +97,6 @@ WITH
 ---------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
-
-
 
 -- DATA PRE-PROCESSING
 
@@ -120,6 +122,7 @@ WHERE
 	[pizza_id] IS NULL OR
 	[quantity] IS NULL
 ;
+---------------------------------------------------------------------------------------------------------
 
 -- Checking Duplicate Records In Orders Table
 SELECT 
@@ -194,6 +197,7 @@ ADD [sale_hour] VARCHAR (10) NOT NULL
 UPDATE [orders]
 SET [sale_hour] = FORMAT(DATEADD(MINUTE,DATEDIFF(MINUTE, 0, time) / 60 * 60, 0), 'hh:00 tt');
 ;
+---------------------------------------------------------------------------------------------------------
 
 --Checking Duplicate Recorde In Pizza Types Table
 SELECT 
@@ -217,6 +221,7 @@ WHERE
 	[category] IS NULL OR
 	[ingredients] IS NULL
 ;
+---------------------------------------------------------------------------------------------------------
 
 -- Checking Duplicate Records In Pizzas Table
 SELECT 
@@ -241,7 +246,7 @@ WHERE
 	[price] IS NULL
 ;
 
--- Adding calculated column for size to transform format
+-- Adding Calculated Column For Size To Transform Format In Pizzas Table
 ALTER TABLE [pizzas]
 ADD [pizza_size] VARCHAR (50) NOT NULL
 ;
@@ -255,7 +260,9 @@ SET [pizza_size] = CASE
 					ELSE 'Double Extra Large'
 				END
 ;
--- Creating View
+---------------------------------------------------------------------------------------------------------
+
+-- Creating View (To Consolidate The Data For Easier Analysis)
 CREATE VIEW [plato_pizza_place_sales] AS
 SELECT 
 	od.[order_details_id],
@@ -284,8 +291,6 @@ LEFT JOIN [pizza_types] pt ON p.[pizza_type_id] = pt.[pizza_type_id]
 ---------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------
-
-
 
 -- ANALYSIS
 
@@ -325,7 +330,6 @@ FROM [plato_pizza_place_sales]
 GROUP BY [day_of_the_week_number],[day_of_the_week],[sale_hour]
 ORDER BY [day_of_the_week_number], [sale_hour]
 ;
-
 ---------------------------------------------------------------------------------------------------------
 
 -- 2. How many pizzas are typically in an order? Do we have any bestsellers? Are there any pizzas we should take of the menu, or any promotions we could leverage?

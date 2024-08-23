@@ -14,10 +14,10 @@ This project focuses on analyzing sales data from Plato Pizza Place, a fictitiou
 
 The dataset comprises four key tables:
 
-* Order Details: The fact table, which provides a breakdown of each order, including the pizza ID, quantity, and order details ID, with a total of 48,260 records.
-* Orders: A dimension table that contains details of each order, including the order ID, date, and time.
-* Pizzas: A dimension table that lists the pizza ID, type, size, and price.
-* Pizza Types: A sub-dimension table of the Pizzas table, which describes the pizza types, including the name, category, and ingredients.
+* **Order Details:** The fact table, which provides a breakdown of each order, including the pizza ID, quantity, and order details ID, with a total of 48,260 records.
+* **Orders:** A dimension table that contains details of each order, including the order ID, date, and time.
+* **Pizzas:** A dimension table that lists the pizza ID, type, size, and price.
+* **Pizza Types:** A sub-dimension table of the Pizzas table, which describes the pizza types, including the name, category, and ingredients.
 
 This project aimed to provide actionable insights that could guide Plato Pizza Place's strategic decisions, from optimizing the menu to enhancing customer engagement. The analysis focused on understanding daily customer traffic, identifying peak hours, determining bestselling and underperforming pizzas, and assessing revenue patterns to uncover potential seasonality in sales.
 
@@ -27,27 +27,27 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 
 **1. SQL Server (MSSQL)**
 
-**Database Creation and Data Import:** Created the database and tables, and imported CSV files using SQL queries.
+* **Database Creation and Data Import:** Created the database and tables, and imported CSV files using SQL queries.
 
-**Data Profiling and Exploration:** Conducted initial data profiling to understand the dataset, including examining data distributions and identifying data quality issues.
+* **Data Profiling and Exploration:** Conducted initial data profiling to understand the dataset, including examining data distributions and identifying data quality issues.
 
-**Data Pre-processing:**
-  * Data Cleaning: Checked for duplicate records and handled missing values across all tables.
-  * Data Transformation: Created calculated columns such as month_number, day_of_the_week, day_of_the_week_number, and converted time data into a 12-hour format. Additionally, transformed pizza size abbreviations (S, M, L, XL) into full forms (Small, Medium, Large, Extra Large).
-  * Data Aggregation: Joined multiple tables using complex queries and created a view (plato_pizza_place_sales) to consolidate the data for easier analysis.
+* **Data Pre-processing:**
+  * **Data Cleaning:** Checked for duplicate records and handled missing values across all tables.
+  * **Data Transformation:** Created calculated columns such as month_number, day_of_the_week, day_of_the_week_number, and converted time data into a 12-hour format. Additionally, transformed pizza size abbreviations (S, M, L, XL) into full forms (Small, Medium, Large, Extra Large).
+  * **Data Aggregation:** Joined multiple tables using complex queries and created a view (plato_pizza_place_sales) to consolidate the data for easier analysis.
 
-**Data Analysis:** Conducted in-depth analysis using SQL queries to answer business questions. Utilized aggregation functions, subqueries, and grouping techniques to derive insights. Key analyses included identifying peak hours, calculating average pizzas per order, determining bestsellers, and assessing total revenue.
+* **Data Analysis:** Conducted in-depth analysis using SQL queries to answer business questions. Utilized aggregation functions, subqueries, and grouping techniques to derive insights. Key analyses included identifying peak hours, calculating average pizzas per order, determining bestsellers, and assessing total revenue.
 
 
 **2. Power BI**
 
-**Data Import and Modeling:** Imported cleaned datasets from SQL Server into Power BI and established relationships between tables.
+* **Data Import and Modeling:** Imported cleaned datasets from SQL Server into Power BI and established relationships between tables.
 
-**Interactive Report Development:**
+* **Interactive Report Development:**
   * Created visualizations, added slicers, and used DAX functions to build an interactive report that allowed end users to explore the data.
   * Developed dashboards that visualized key metrics such as daily customer counts, peak hours, average pizzas per order, bestsellers, and total revenue.
 
-**Report Publishing:** Published the final report to Power BI Service to share the results with stakeholders.
+* **Report Publishing:** Published the final report to Power BI Service to share the results with stakeholders.
 
 
 ## Business Questions

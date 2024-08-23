@@ -6,7 +6,7 @@
 2. [Tools and Methodologies](#tools-and-methodologies)
 3. [Business Questions](#business-questions)
 4. [Visualization](#visualization)
-5. [Insights and Recommendation](#insights-and-recommendation)
+5. [Insights and Recommendations](#insights-and-recommendations)
 
 
 ## Project Overview

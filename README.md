@@ -25,7 +25,7 @@ This project aimed to provide actionable insights that could guide Plato Pizza P
 ## Tools and Methodologies
 To efficiently manage and analyze the pizza place sales data, I utilized a combination of SQL Server (MSSQL) for data processing, and analysis and Power BI for visualization and reporting. The choice of tools was driven by the need for robust data handling, complex query capabilities, and interactive report generation to uncover key business insights. Below is a detailed breakdown of how each tool was employed throughout the project.
 
-**1. SQL Server (MSSQL)**
+**1. SQL Server (MSSQL)** [Click Here To View SQL Queries](https://github.com/Zay-Yar-Htay/Plato-Pizza-Place-Sales-Analysis/blob/main/plato_pizza_place_sales_queries.sql)
 
 * **Database Creation and Data Import:** Created the database and tables, and imported CSV files using SQL queries.
 

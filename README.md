@@ -64,7 +64,8 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 4. Are there any pizzas we should take off the menu, or any promotions we could leverage?
 
 
-## Visualization
+## Visualization 
+[Interactive Report Link](https://app.powerbi.com/view?r=eyJrIjoiZTRhNGJjOWUtNjkwNy00YTZhLWFhM2MtOGE2ZTFkMWYzZDUzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 ![Plato Pizza Sales Analysis Report](https://github.com/user-attachments/assets/dc301778-372d-401d-b424-5f7aee86c554)
 
 

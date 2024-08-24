@@ -43,7 +43,7 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 * **Data Analysis:** Conducted in-depth analysis using SQL queries to answer business questions. Utilized aggregation functions, subqueries, and grouping techniques to derive insights. Key analyses included identifying peak hours, calculating average pizzas per order, determining bestsellers, and assessing total revenue.
 
 
-**2. Power BI** [Click Here To Download Power BI Report File](https://github.com/Zay-Yar-Htay/Plato-Pizza-Place-Sales-Analysis/blob/main/plato_pizza_place_sales_analysis.pbix)
+**2. Power BI** [Click Here To Download Power BI Report Desktop File](https://github.com/Zay-Yar-Htay/Plato-Pizza-Place-Sales-Analysis/blob/main/plato_pizza_place_sales_analysis.pbix)
 
 * **Data Import and Modeling:** Imported cleaned datasets from SQL Server into Power BI and established relationships between tables.
 

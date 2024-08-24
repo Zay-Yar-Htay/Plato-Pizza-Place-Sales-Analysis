@@ -3,10 +3,11 @@
 ## Table Of Contents
 
 1. [Project Overview](#project-overview)
-2. [Tools and Methodologies](#tools-and-methodologies)
-3. [Business Questions](#business-questions)
-4. [Visualization](#visualization)
-5. [Insights and Recommendations](#insights-and-recommendations)
+2. [Work Flow](#work-flow)
+3. [Tools and Methodologies](#tools-and-methodologies)
+4. [Business Questions](#business-questions)
+5. [Visualization](#visualization)
+6. [Insights and Recommendations](#insights-and-recommendations)
 
 
 ## Project Overview
@@ -20,6 +21,9 @@ The dataset comprises four key tables:
 * **Pizza Types:** A sub-dimension table of the Pizzas table, which describes the pizza types, including the name, category, and ingredients.
 
 This project aimed to provide actionable insights that could guide Plato Pizza Place's strategic decisions, from optimizing the menu to enhancing customer engagement. The analysis focused on understanding daily customer traffic, identifying peak hours, determining bestselling and underperforming pizzas, and assessing revenue patterns to uncover potential seasonality in sales.
+
+
+## Work Flow
 
 
 ## Tools and Methodologies

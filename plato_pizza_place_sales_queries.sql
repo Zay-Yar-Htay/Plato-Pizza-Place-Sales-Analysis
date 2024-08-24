@@ -179,14 +179,14 @@ ADD [day_of_the_week_number] INT NOT NULL
 
 UPDATE [orders]
 SET [day_of_the_week_number] =CASE
-								WHEN UPPER(FORMAT([date],'ddd')) = 'MON' THEN 1
-								WHEN UPPER(FORMAT([date],'ddd')) = 'TUE' THEN 2
-								WHEN UPPER(FORMAT([date],'ddd')) = 'WED' THEN 3
-								WHEN UPPER(FORMAT([date],'ddd')) = 'THU' THEN 4
-								WHEN UPPER(FORMAT([date],'ddd')) = 'FRI' THEN 5
-								WHEN UPPER(FORMAT([date],'ddd')) = 'SAT' THEN 6
-								ELSE 7 
-							END
+				  WHEN UPPER(FORMAT([date],'ddd')) = 'MON' THEN 1
+				  WHEN UPPER(FORMAT([date],'ddd')) = 'TUE' THEN 2
+				  WHEN UPPER(FORMAT([date],'ddd')) = 'WED' THEN 3
+				  WHEN UPPER(FORMAT([date],'ddd')) = 'THU' THEN 4
+				  WHEN UPPER(FORMAT([date],'ddd')) = 'FRI' THEN 5
+				  WHEN UPPER(FORMAT([date],'ddd')) = 'SAT' THEN 6
+				  ELSE 7 
+			      END
 ;
 
 -- Adding Sale Hour Column In Orders Table
@@ -199,7 +199,7 @@ SET [sale_hour] = FORMAT(DATEADD(MINUTE,DATEDIFF(MINUTE, 0, time) / 60 * 60, 0),
 ;
 ---------------------------------------------------------------------------------------------------------
 
---Checking Duplicate Recorde In Pizza Types Table
+--Checking Duplicate Records In Pizza Types Table
 SELECT 
 	[pizza_type_id],
 	COUNT([pizza_type_id]) AS [count]
@@ -253,12 +253,12 @@ ADD [pizza_size] VARCHAR (50) NOT NULL
 
 UPDATE [pizzas]
 SET [pizza_size] = CASE 
-					WHEN [size] = 'S' THEN 'Small'
-					WHEN [size] = 'M' THEN 'Medium'
-					WHEN [size] = 'L' THEN 'Large'
-					WHEN [size] = 'XL' THEN 'Extra Large'
-					ELSE 'Double Extra Large'
-				END
+			WHEN [size] = 'S' THEN 'Small'
+			WHEN [size] = 'M' THEN 'Medium'
+			WHEN [size] = 'L' THEN 'Large'
+			WHEN [size] = 'XL' THEN 'Extra Large'
+			ELSE 'Double Extra Large'
+		    END
 ;
 ---------------------------------------------------------------------------------------------------------
 

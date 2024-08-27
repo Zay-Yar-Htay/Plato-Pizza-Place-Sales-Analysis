@@ -61,7 +61,7 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 
 
 ## Visualizations 
-[Interactive Report Link](https://app.powerbi.com/view?r=eyJrIjoiZTRhNGJjOWUtNjkwNy00YTZhLWFhM2MtOGE2ZTFkMWYzZDUzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
+[Interactive Report Link](https://app.powerbi.com/view?r=eyJrIjoiYWQwMTk0MGMtNTg2NS00ZDE0LTg2MTMtYTVjYjc3YTY5MTliIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 ![Plato Pizza Sales Analysis Report](https://github.com/user-attachments/assets/1230628e-9afd-475b-8700-bac78886794a)
 
 

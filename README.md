@@ -5,7 +5,7 @@
 1. [Project Overview](#project-overview)
 2. [Tools and Methodologies](#tools-and-methodologies)
 3. [Business Questions](#business-questions)
-4. [Visualization](#visualization)
+4. [Visualizations](#visualizations)
 5. [Insights and Recommendations](#insights-and-recommendations)
 
 
@@ -60,7 +60,7 @@ To efficiently manage and analyze the pizza place sales data, I utilized a combi
 4. Are there any pizzas we should take off the menu, or any promotions we could leverage?
 
 
-## Visualization 
+## Visualizations 
 [Interactive Report Link](https://app.powerbi.com/view?r=eyJrIjoiZTRhNGJjOWUtNjkwNy00YTZhLWFhM2MtOGE2ZTFkMWYzZDUzIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9)
 ![Plato Pizza Sales Analysis Report](https://github.com/user-attachments/assets/1230628e-9afd-475b-8700-bac78886794a)
 
